@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classes & Programs | Surve Coaching Classes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 1. PREMIUM NAVBAR -->
+  <nav class="navbar">
+    <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 0.5rem;">
+      <span style="background: var(--primary); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.9rem;">SCC</span>
+      Surve Coaching Classes
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="classes.html" class="active">Classes</a>
+      <a href="exams.html">Competitive Exams</a>
+      <a href="courses.html">Courses</a>
+      <a href="study.html">Study & Tests</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+      <a href="dashboard.html" class="btn-primary">Start Learning</a>
+    </div>
+    <button class="mobile-menu-toggle" aria-label="Toggle navigation">☰</button>
+  </nav>
+
+  <!-- 2. HERO -->
+  <header class="container" style="text-align: center; padding: 5rem 2rem 3rem;">
+    <h1 style="font-size: 3rem; font-weight: 800; margin-bottom: 1rem; letter-spacing: -0.025em;">
+      Find the Right Class for You
+    </h1>
+    <p class="section-subtitle">
+      Structured learning paths from Class 8 to College, designed to build strong foundations and achieve top academic ranks.
+    </p>
+  </header>
+
+  <!-- 3. CLASS CATEGORY TABS / FILTERS -->
+  <div style="max-width: 1200px; margin: 0 auto 2rem; padding: 0 2rem; display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center;">
+    <button onclick="filterClasses('all')" class="btn-primary" id="filter-all" style="background: var(--primary); cursor: pointer;">All Classes</button>
+    <button onclick="filterClasses('school')" class="card" style="padding: 0.6rem 1.25rem; font-weight: 600; background: white; cursor: pointer; border: 1px solid var(--border);">School (8-10)</button>
+    <button onclick="filterClasses(' junior')" class="card" style="padding: 0.6rem 1.25rem; font-weight: 600; background: white; cursor: pointer; border: 1px solid var(--border);" id="btn-junior">Junior College (11-12)</button>
+    <button onclick="filterClasses('college')" class="card" style="padding: 0.6rem 1.25rem; font-weight: 600; background: white; cursor: pointer; border: 1px solid var(--border);">Diploma & Degree</button>
+  </div>
+
+  <!-- 4. SCHOOL SECTION -->
+  <section class="container" data-category="school" style="padding-top: 1rem; padding-bottom: 3rem;">
+    <div style="border-left: 4px solid var(--primary); padding-left: 1rem; margin-bottom: 2rem;">
+      <h2 style="font-size: 2rem; font-weight: 800;">School Section</h2>
+      <p style="color: var(--text-muted);">Building core analytical skills for middle and high school students.</p>
+    </div>
+
+    <div class="grid-3">
+      <!-- Class 8 -->
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Middle School</span>
+          <h3 style="font-size: 1.5rem; margin: 0.5rem 0;">Class 8</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Transitioning to advanced scientific and mathematical reasoning.</p>
+          
+          <ul style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-main);">
+            <li style="margin-bottom: 0.4rem;"><strong>Subjects:</strong> Mathematics, Science, English, Social Science</li>
+            <li style="margin-bottom: 0.4rem;"><strong>Board:</strong> State Board / CBSE</li>
+            <li style="margin-bottom: 0.4rem;"><strong>Resources:</strong> Concept notes, chapter videos, worksheets</li>
+            <li style="margin-bottom: 0.4rem;"><strong>Practice:</strong> Weekly quizzes & unit tests</li>
+          </ul>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.6rem;">Explore Class 8</a>
+      </div>
+
+      <!-- Class 9 -->
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">High School Foundation</span>
+          <h3 style="font-size: 1.5rem; margin: 0.5rem 0;">Class 9</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Laying the groundwork for board examinations and competitive tracks.</p>
+          
+          <ul style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-main);">
+            <li style="margin-bottom: 0.4rem;"><strong>Subjects:</strong> Algebra, Geometry, Science (Physics/Chem/Bio), History</li>
+            <li style="margin-bottom: 0.4rem;"><strong>Board:</strong> State Board / CBSE</li>
+            <li style="margin-bottom: 0.4rem;"><strong>Resources:</strong> Detailed derivations, formula handbooks</li>
+            <li style="margin-bottom: 0.4rem;"><strong>Practice:</strong> Chapter practice sets & mock exams</li>
+          </ul>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.6rem;">Explore Class 9</a>
+      </div>
+
+      <!-- Class 10 -->
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Board Milestone</span>
+          <h3 style="font-size: 1.5rem; margin: 0.5rem 0;">Class 10</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Intensive board exam preparation with rigorous question bank solving.</p>
+          
+          <ul style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-main);">
+            <li style="margin-bottom: 0.4rem;"><strong>Subjects:</strong> Advanced Math, Science 1 & 2, Languages, Social Studies</li>
+            <li style="margin-bottom: 0.4rem;"><strong>Board:</strong> State Board / CBSE</li>
+            <li style="margin-bottom: 0.4rem;"><strong>Resources:</strong> Previous years' papers & board pattern solutions</li>
+            <li style="margin-bottom: 0.4rem;"><strong>Practice:</strong> Full-length board mock simulations</li>
+          </ul>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.6rem;">Explore Class 10</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. JUNIOR COLLEGE -->
+  <section class="container" data-category="junior" style="padding-top: 1rem; padding-bottom: 3rem; background-color: white; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div style="border-left: 4px solid var(--primary); padding-left: 1rem; margin-bottom: 2rem;">
+      <h2 style="font-size: 2rem; font-weight: 800;">Junior College Section</h2>
+      <p style="color: var(--text-muted);">Specialized streams for Class 11 and Class 12 academic and entrance success.</p>
+    </div>
+
+    <div class="grid-3">
+      <!-- 11th Science -->
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Science Stream</span>
+          <h3 style="font-size: 1.35rem; margin: 0.5rem 0;">11th Science</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Physics, Chemistry, Mathematics, Biology (PCMB) fundamentals.</p>
+          <ul style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-main);">
+            <li style="margin-bottom: 0.3rem;"><strong>Focus:</strong> JEE / NEET core concepts</li>
+            <li style="margin-bottom: 0.3rem;"><strong>Resources:</strong> Numerical problem solvers & diagrams</li>
+          </ul>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">Explore Batch</a>
+      </div>
+
+      <!-- 11th Commerce -->
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Commerce Stream</span>
+          <h3 style="font-size: 1.35rem; margin: 0.5rem 0;">11th Commerce</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Bookkeeping, Accountancy, Economics, and Business Studies.</p>
+          <ul style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-main);">
+            <li style="margin-bottom: 0.3rem;"><strong>Focus:</strong> Financial calculations & theory</li>
+            <li style="margin-bottom: 0.3rem;"><strong>Resources:</strong> Accounting sum sheets</li>
+          </ul>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">Explore Batch</a>
+      </div>
+
+      <!-- 11th Arts -->
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Arts Stream</span>
+          <h3 style="font-size: 1.35rem; margin: 0.5rem 0;">11th Arts</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">History, Political Science, Sociology, and Literature.</p>
+          <ul style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-main);">
+            <li style="margin-bottom: 0.3rem;"><strong>Focus:</strong> Analytical writing & civics</li>
+            <li style="margin-bottom: 0.3rem;"><strong>Resources:</strong> Comprehensive essay guides</li>
+          </ul>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">Explore Batch</a>
+      </div>
+
+      <!-- 12th Science -->
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Science Stream</span>
+          <h3 style="font-size: 1.35rem; margin: 0.5rem 0;">12th Science</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Board exam mastery alongside simultaneous entrance exam prep.</p>
+          <ul style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-main);">
+            <li style="margin-bottom: 0.3rem;"><strong>Focus:</strong> Board distinction & CET/JEE/NEET</li>
+            <li style="margin-bottom: 0.3rem;"><strong>Resources:</strong> Model answer papers</li>
+          </ul>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">Explore Batch</a>
+      </div>
+
+      <!-- 12th Commerce -->
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Commerce Stream</span>
+          <h3 style="font-size: 1.35rem; margin: 0.5rem 0;">12th Commerce</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Advanced accounting, corporate law basics, and economics.</p>
+          <ul style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-main);">
+            <li style="margin-bottom: 0.3rem;"><strong>Focus:</strong> Partnership accounts & auditing</li>
+            <li style="margin-bottom: 0.3rem;"><strong>Resources:</strong> Case study analysis</li>
+          </ul>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">Explore Batch</a>
+      </div>
+
+      <!-- 12th Arts -->
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Arts Stream</span>
+          <h3 style="font-size: 1.35rem; margin: 0.5rem 0;">12th Arts</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Structured preparation for humanities board examinations.</p>
+          <ul style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-main);">
+            <li style="margin-bottom: 0.3rem;"><strong>Focus:</strong> Detailed historical & civic study</li>
+            <li style="margin-bottom: 0.3rem;"><strong>Resources:</strong> Answer presentation frameworks</li>
+          </ul>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">Explore Batch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. COLLEGE SECTION -->
+  <section class="container" data-category="college" style="padding-top: 1rem; padding-bottom: 3rem;">
+    <div style="border-left: 4px solid var(--primary); padding-left: 1rem; margin-bottom: 2rem;">
+      <h2 style="font-size: 2rem; font-weight: 800;">College & Professional Section</h2>
+      <p style="color: var(--text-muted);">Diploma, technical degree, and skill-based learning modules.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Diploma Engineering</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Semester coaching for polytechnic diploma branches (Civil, Mechanical, Electrical).</p>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">View Details</a>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Engineering Degree</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">First and second-year engineering mathematics, mechanics, and basic electronics.</p>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">View Details</a>
+      </div>
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Computer Science & IT</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.25rem;">Data structures, algorithms, database management, and core software concepts.</p>
+        </div>
+        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOUNDATION SECTION -->
+  <section class="container" style="background: linear-gradient(135deg, var(--primary-light), #e0f2fe); border-radius: var(--radius-lg); margin-top: 2rem; margin-bottom: 2rem; text-align: center; border: 1px solid var(--border);">
+    <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 1rem;">Early Competitive Exam Foundation</h2>
+    <p style="color: var(--text-muted); max-width: 700px; margin: 0 auto 1.5rem; font-size: 1.05rem;">
+      Students starting their preparation in Class 8, 9, or 10 gain a massive advantage in JEE, NEET, and Olympiads. Our integrated foundation batches build analytical thinking and problem-solving agility early.
+    </p>
+    <a href="exams.html" class="btn-primary" style="padding: 0.75rem 2rem;">Explore Exam Tracks</a>
+  </section>
+
+  <!-- 8. CTA -->
+  <section class="container" style="text-align: center; padding: 4rem 2rem 2rem;">
+    <h3 style="font-size: 2rem; font-weight: 800; margin-bottom: 0.75rem;">Not sure what to choose?</h3>
+    <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Our academic counselors are here to help you select the ideal batch for your career goals.</p>
+    <a href="about.html" class="btn-primary" style="padding: 0.8rem 2rem;">Talk to Us</a>
+  </section>
+
+  <!-- 9. FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4 style="color: white; margin-bottom: 1rem;">Surve Coaching Classes</h4>
+        <p style="font-size: 0.9rem; line-height: 1.6;">Empowering students from Class 8 to college entrance with expert faculty and structured learning roadmaps.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="classes.html">Classes</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learning Paths</h4>
+        <ul>
+          <li><a href="classes.html">School (8-10)</a></li>
+          <li><a href="classes.html">Junior College</a></li>
+          <li><a href="courses.html">College & Degree</a></li>
+          <li><a href="study.html">Mock Tests</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Competitive Exams</h4>
+        <ul>
+          <li><a href="exams.html">JEE Main & Advanced</a></li>
+          <li><a href="exams.html">NEET Medical</a></li>
+          <li><a href="exams.html">MHT-CET</a></li>
+          <li><a href="exams.html">MPSC / UPSC</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support & Connect</h4>
+        <ul>
+          <li><a href="login.html">Student Portal</a></li>
+          <li><a href="about.html">Faculty Directory</a></li>
+          <li><a href="about.html">Contact Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Surve Coaching Classes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
