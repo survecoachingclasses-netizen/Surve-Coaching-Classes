@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surve Coaching Classes | Premium Learning Platform</title>
+  <title>Surve Coaching Classes | Premium Education Hub</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
       Surve Coaching Classes
     </a>
     <div class="nav-links">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="classes.html">Classes</a>
       <a href="exams.html">Competitive Exams</a>
       <a href="courses.html">Courses</a>
@@ -31,262 +31,94 @@
   </nav>
 
   <!-- 2. HERO SECTION -->
-  <header class="container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; padding: 5rem 2rem;">
+  <header class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center; padding: 4rem 2rem;">
     <div>
       <div style="display: inline-block; background: var(--primary-light); color: var(--primary); padding: 0.35rem 0.85rem; border-radius: 50px; font-weight: 600; font-size: 0.875rem; margin-bottom: 1.5rem;">
         🚀 Excellence in Education Since Day One
       </div>
-      <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.1; margin-bottom: 1.5rem; letter-spacing: -0.025em;">
-        Learn Today. <br><span style="color: var(--primary);">Lead Tomorrow.</span>
+      <h1 style="font-size: 3.25rem; font-weight: 800; line-height: 1.15; margin-bottom: 1.5rem; letter-spacing: -0.025em;">
+        Learn Today.<br>Lead Tomorrow.
       </h1>
-      <p style="color: var(--text-muted); font-size: 1.125rem; margin-bottom: 2.5rem; max-width: 500px;">
+      <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem; line-height: 1.7;">
         Premium learning for School, College and Competitive Exams — all in one place. Master concepts with expert mentorship and rigorous practice.
       </p>
-      <div style="display: flex; gap: 1rem;">
-        <a href="classes.html" class="btn-primary" style="padding: 0.8rem 1.75rem; font-size: 1rem;">Explore Classes</a>
-        <a href="dashboard.html" class="card" style="padding: 0.8rem 1.75rem; font-size: 1rem; font-weight: 600; display: inline-flex; align-items: center; background: white;">Start Learning</a>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="classes.html" class="btn-primary" style="padding: 0.8rem 1.75rem;">Explore Classes</a>
+        <a href="dashboard.html" class="card" style="padding: 0.8rem 1.75rem; font-weight: 600; background: white; display: inline-flex; align-items: center;">Start Learning</a>
       </div>
     </div>
-    <div style="position: relative;">
-      <div style="background: linear-gradient(135deg, var(--primary-light), #e0f2fe); border-radius: var(--radius-lg); padding: 3rem; text-align: center; border: 1px solid var(--border); box-shadow: var(--shadow-lg);">
-        <div style="font-size: 5rem; margin-bottom: 1rem;">🎓</div>
-        <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem;">Surve Coaching Classes Hub</h3>
-        <p style="color: var(--text-muted); font-size: 0.95rem;">Interactive modules, live problem-solving, and structured academic pathways designed for top ranks.</p>
-      </div>
+    
+    <div class="card" style="background: linear-gradient(135deg, var(--primary-light) 0%, #ffffff 100%); text-align: center; padding: 3rem 2rem; border: 1px solid var(--border);">
+      <div style="font-size: 3.5rem; margin-bottom: 1rem;">🎓</div>
+      <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem;">Surve Coaching Classes Hub</h3>
+      <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.6;">
+        Interactive modules, live problem-solving, and structured academic pathways designed for top ranks.
+      </p>
     </div>
   </header>
 
-  <!-- 3. EDUCATION PATH -->
+  <!-- 3. CHOOSE YOUR LEARNING PATH SECTION -->
   <section class="container" style="background-color: white; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
     <h2 class="section-title">Choose Your Learning Path</h2>
     <p class="section-subtitle">Targeted preparation programs structured precisely for your current academic milestones.</p>
     
-    <div class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
-      <a href="classes.html" class="card" style="text-align: center; display: block;">
-        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏫</div>
-        <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">School</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Class 8 to 10</p>
-      </a>
-      <a href="classes.html" class="card" style="text-align: center; display: block;">
-        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📘</div>
-        <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Junior College</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Class 11 & 12</p>
-      </a>
-      <a href="courses.html" class="card" style="text-align: center; display: block;">
-        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎓</div>
-        <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">College</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">Diploma & Degree</p>
-      </a>
-      <a href="exams.html" class="card" style="text-align: center; display: block;">
-        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🎯</div>
-        <h3 style="margin-bottom: 0.5rem; font-size: 1.25rem;">Competitive Exams</h3>
-        <p style="color: var(--text-muted); font-size: 0.9rem;">JEE • NEET • CET • Govt</p>
-      </a>
+    <div class="grid-3">
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 2rem; display: block; margin-bottom: 1rem;">🏫</span>
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">School (Class 8 - 10)</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Foundation building in Mathematics and Science aligned with state and national board standards.</p>
+        </div>
+        <a href="classes.html" class="btn-primary" style="text-align: center; display: block; padding: 0.6rem;">Explore School Path</a>
+      </div>
+
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 2rem; display: block; margin-bottom: 1rem;">🏛️</span>
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Junior College (11th & 12th)</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Comprehensive PCM/PCB coaching combined with rigorous board exam preparation and conceptual clarity.</p>
+        </div>
+        <a href="classes.html" class="btn-primary" style="text-align: center; display: block; padding: 0.6rem;">Explore Junior College</a>
+      </div>
+
+      <div class="card" style="display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <span style="font-size: 2rem; display: block; margin-bottom: 1rem;">🎯</span>
+          <h3 style="font-size: 1.35rem; margin-bottom: 0.5rem;">Competitive Exams</h3>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Specialized modules for JEE Main, NEET, MHT-CET, UPSC, MPSC, and Banking entrance tests.</p>
+        </div>
+        <a href="exams.html" class="btn-primary" style="text-align: center; display: block; padding: 0.6rem;">Explore Exams Hub</a>
+      </div>
     </div>
   </section>
 
-  <!-- 4. WHY CHOOSE US -->
+  <!-- 4. WHY SURVE COACHING CLASSES -->
   <section class="container">
-    <h2 class="section-title">Why Choose Surve Coaching Classes</h2>
-    <p class="section-subtitle">We combine traditional academic rigor with modern digital learning tools.</p>
+    <h2 class="section-title">Why Students Choose Us</h2>
+    <p class="section-subtitle">We combine traditional academic rigor with modern digital tracking tools for assured student success.</p>
     
     <div class="grid-3">
       <div class="card">
-        <h3 style="margin-bottom: 0.75rem; font-size: 1.15rem;">👨‍🏫 Expert Guidance</h3>
-        <p style="color: var(--text-muted);">Learn from veteran educators committed to individual student clarity and growth.</p>
+        <h3 style="margin-bottom: 0.75rem; font-size: 1.15rem;">👨‍🏫 Expert Faculty</h3>
+        <p style="color: var(--text-muted);">Learn directly from experienced educators dedicated to simplifying complex academic problems.</p>
       </div>
       <div class="card">
-        <h3 style="margin-bottom: 0.75rem; font-size: 1.15rem;">📚 Premium Study Material</h3>
-        <p style="color: var(--text-muted);">Comprehensive notes, formula sheets, and chapter summaries designed for retention.</p>
+        <h3 style="margin-bottom: 0.75rem; font-size: 1.15rem;">📝 Rigorous Testing</h3>
+        <p style="color: var(--text-muted);">Regular chapter assessments, unit tests, and full mock simulations matching actual exam patterns.</p>
       </div>
       <div class="card">
-        <h3 style="margin-bottom: 0.75rem; font-size: 1.15rem;">📝 Practice & Mock Tests</h3>
-        <p style="color: var(--text-muted);">Regular chapter tests and full-length exam simulations mirroring actual test patterns.</p>
-      </div>
-      <div class="card">
-        <h3 style="margin-bottom: 0.75rem; font-size: 1.15rem;">📊 Progress Tracking</h3>
-        <p style="color: var(--text-muted);">Detailed performance analytics dashboards highlighting strengths and improvement areas.</p>
-      </div>
-      <div class="card">
-        <h3 style="margin-bottom: 0.75rem; font-size: 1.15rem;">🧩 Structured Learning</h3>
-        <p style="color: var(--text-muted);">Step-by-step curriculum roadmaps ensuring no gaps remain in foundational concepts.</p>
-      </div>
-      <div class="card">
-        <h3 style="margin-bottom: 0.75rem; font-size: 1.15rem;">🌐 Learn Anywhere</h3>
-        <p style="color: var(--text-muted);">Access lectures, recorded sessions, and assignments seamlessly across all devices.</p>
+        <h3 style="margin-bottom: 0.75rem; font-size: 1.15rem;">📊 Performance Dashboards</h3>
+        <p style="color: var(--text-muted);">Detailed analytical insights tracking accuracy, time management, and topic-wise strength metrics.</p>
       </div>
     </div>
   </section>
 
-  <!-- 5. FEATURED COURSES -->
-  <section class="container" style="background-color: white; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-    <h2 class="section-title">Featured Courses</h2>
-    <p class="section-subtitle">Handpicked programs designed to accelerate academic and technical performance.</p>
-    
-    <div class="grid-3">
-      <div class="card" style="display: flex; flexDirection: column; justify-content: space-between;">
-        <div>
-          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Class 10 Board Mastery</span>
-          <h3 style="font-size: 1.25rem; margin: 0.5rem 0;">Advanced Mathematics & Science</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Rigorous problem-solving and conceptual clarity for securing top board scores.</p>
-        </div>
-        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">View Course</a>
-      </div>
-      <div class="card" style="display: flex; flexDirection: column; justify-content: space-between;">
-        <div>
-          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Engineering Entrance</span>
-          <h3 style="font-size: 1.25rem; margin: 0.5rem 0;">JEE Main & Advanced Foundation</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Master core physics, chemistry, and calculus with shortcut methodologies.</p>
-        </div>
-        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">View Course</a>
-      </div>
-      <div class="card" style="display: flex; flexDirection: column; justify-content: space-between;">
-        <div>
-          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Medical Entrance</span>
-          <h3 style="font-size: 1.25rem; margin: 0.5rem 0;">NEET Biology & Physics Track</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">NCERT-centric deep dives paired with high-yield question banks.</p>
-        </div>
-        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">View Course</a>
-      </div>
-      <div class="card" style="display: flex; flexDirection: column; justify-content: space-between;">
-        <div>
-          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">State CET Program</span>
-          <h3 style="font-size: 1.25rem; margin: 0.5rem 0;">MHT-CET Comprehensive Batch</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Targeted speed-accuracy training aligned with Maharashtra state board standards.</p>
-        </div>
-        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">View Course</a>
-      </div>
-      <div class="card" style="display: flex; flexDirection: column; justify-content: space-between;">
-        <div>
-          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Middle School</span>
-          <h3 style="font-size: 1.25rem; margin: 0.5rem 0;">Class 8-9 Academic Booster</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Build rock-solid fundamentals in core analytical subjects early on.</p>
-        </div>
-        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">View Course</a>
-      </div>
-      <div class="card" style="display: flex; flexDirection: column; justify-content: space-between;">
-        <div>
-          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--primary);">Skill Development</span>
-          <h3 style="font-size: 1.25rem; margin: 0.5rem 0;">Coding & Logic Fundamentals</h3>
-          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem;">Introduce logical structuring, Python basics, and modern computational thinking.</p>
-        </div>
-        <a href="courses.html" class="btn-primary" style="text-align: center; display: block; padding: 0.5rem;">View Course</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. EXAM PREPARATION -->
-  <section class="container" style="text-align: center;">
-    <h2 class="section-title">Competitive Exam Preparation</h2>
-    <p class="section-subtitle">Specialized modules built to tackle India's toughest examinations with absolute confidence.</p>
-    
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
-      <div class="card" style="padding: 1.5rem;"><h3 style="color: var(--primary);">JEE</h3></div>
-      <div class="card" style="padding: 1.5rem;"><h3 style="color: var(--primary);">NEET</h3></div>
-      <div class="card" style="padding: 1.5rem;"><h3 style="color: var(--primary);">MHT-CET</h3></div>
-      <div class="card" style="padding: 1.5rem;"><h3 style="color: var(--primary);">MPSC</h3></div>
-      <div class="card" style="padding: 1.5rem;"><h3 style="color: var(--primary);">UPSC</h3></div>
-      <div class="card" style="padding: 1.5rem;"><h3 style="color: var(--primary);">SSC</h3></div>
-    </div>
-    <a href="exams.html" class="btn-primary" style="padding: 0.75rem 2rem;">Explore Exams</a>
-  </section>
-
-  <!-- 7. STATS -->
-  <section style="background: var(--primary); color: white; padding: 4rem 5%;">
-    <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
-      <div>
-        <h2 style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;">10,000+</h2>
-        <p style="color: var(--primary-light);">Active Learners</p>
-      </div>
-      <div>
-        <h2 style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;">50+</h2>
-        <p style="color: var(--primary-light);">Specialized Courses</p>
-      </div>
-      <div>
-        <h2 style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;">500+</h2>
-        <p style="color: var(--primary-light);">Mock Test Series</p>
-      </div>
-      <div>
-        <h2 style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;">25,000+</h2>
-        <p style="color: var(--primary-light);">Curated Questions</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 8. HOW IT WORKS -->
-  <section class="container">
-    <h2 class="section-title">How It Works</h2>
-    <p class="section-subtitle">A streamlined 5-step approach designed to take you from concept understanding to academic excellence.</p>
-    
-    <div class="grid-3" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
-      <div class="card" style="text-align: center;">
-        <div style="background: var(--primary-light); color: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: 700;">1</div>
-        <h4>Choose Goal</h4>
-        <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem;">Select your standard or target competitive exam.</p>
-      </div>
-      <div class="card" style="text-align: center;">
-        <div style="background: var(--primary-light); color: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: 700;">2</div>
-        <h4>Select Course</h4>
-        <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem;">Pick specialized video lectures and study plans.</p>
-      </div>
-      <div class="card" style="text-align: center;">
-        <div style="background: var(--primary-light); color: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: 700;">3</div>
-        <h4>Learn</h4>
-        <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem;">Engage with crystal-clear concept explanations.</p>
-      </div>
-      <div class="card" style="text-align: center;">
-        <div style="background: var(--primary-light); color: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: 700;">4</div>
-        <h4>Practice</h4>
-        <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem;">Solve chapter quizzes and chapter-wise problem sets.</p>
-      </div>
-      <div class="card" style="text-align: center;">
-        <div style="background: var(--primary-light); color: var(--primary); width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: 700;">5</div>
-        <h4>Track Progress</h4>
-        <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem;">Analyze test metrics and improve systematically.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 9. TESTIMONIALS -->
-  <section class="container" style="background-color: white; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
-    <h2 class="section-title">What Our Students Say</h2>
-    <p class="section-subtitle">Real experiences from students who transformed their scores with Surve Coaching Classes.</p>
-    
-    <div class="grid-3">
-      <div class="card">
-        <p style="color: var(--text-muted); font-style: italic; margin-bottom: 1.5rem;">"Surve Coaching Classes changed my entire perspective on Mathematics. The step-by-step problem-solving methods helped me secure 98% in my Class 10 board exams."</p>
-        <h4 style="font-size: 1rem;">Aarav Deshmukh</h4>
-        <span style="font-size: 0.85rem; color: var(--text-muted);">Class 10 Student</span>
-      </div>
-      <div class="card">
-        <p style="color: var(--text-muted); font-style: italic; margin-bottom: 1.5rem;">"The JEE foundation batch provided deep conceptual clarity that regular school classes missed. Highly structured mock tests made exam day stress-free."</p>
-        <h4 style="font-size: 1rem;">Rohan Kulkarni</h4>
-        <span style="font-size: 0.85rem; color: var(--text-muted);">JEE Aspirant (Class 12)</span>
-      </div>
-      <div class="card">
-        <p style="color: var(--text-muted); font-style: italic; margin-bottom: 1.5rem;">"Faculty attention is unmatched. Whenever I faced doubt in physics equations, mentors were ready with clear explanations. Truly a world-class platform."</p>
-        <h4 style="font-size: 1rem;">Sneha Patil</h4>
-        <span style="font-size: 0.85rem; color: var(--text-muted);">NEET Aspirant</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- 10. FINAL CTA -->
-  <section class="container" style="text-align: center; padding: 6rem 2rem;">
-    <h2 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Your Learning Journey Starts Here.</h2>
-    <p class="section-subtitle">Join thousands of successful students and take your academic performance to the next level.</p>
-    <div style="display: flex; gap: 1rem; justify-content: center; margin-top: 2rem;">
-      <a href="courses.html" class="btn-primary" style="padding: 0.8rem 2rem;">Explore Courses</a>
-      <a href="login.html" class="card" style="padding: 0.8rem 2rem; font-weight: 600; background: white; display: inline-flex; align-items: center;">Create Account</a>
-    </div>
-  </section>
-
-  <!-- 11. PREMIUM FOOTER -->
+  <!-- 5. FOOTER -->
   <footer class="footer">
     <div class="footer-content">
       <div class="footer-col">
         <h4 style="color: white; margin-bottom: 1rem;">Surve Coaching Classes</h4>
-        <p style="font-size: 0.9rem; line-height: 1.6;">Empowering students from Class 8 to college entrance with expert faculty, rigorous testing, and structured learning roadmaps.</p>
+        <p style="font-size: 0.9rem; line-height: 1.6;">Empowering students from Class 8 to college entrance with expert faculty and structured learning roadmaps.</p>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>
