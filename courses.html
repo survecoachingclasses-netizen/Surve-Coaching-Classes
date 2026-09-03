@@ -1,337 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Courses & Programs | Surve Coaching Class</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        :root {
-            --primary: #1e40af;
-            --secondary: #2563eb;
-            --accent: #f59e0b;
-            --dark: #1f2937;
-            --light: #f3f4f6;
-            --white: #ffffff;
-        }
-
-        /* Navbar */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 8%;
-        }
-
-        .logo {
-            font-size: 22px;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-        }
-
-        .logo span {
-            color: var(--accent);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 25px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            font-size: 15px;
-            transition: 0.3s;
-        }
-
-        nav ul li a:hover, nav ul li a.active {
-            color: var(--primary);
-        }
-
-        /* Page Header Banner */
-        .page-banner {
-            height: 50vh;
-            background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(30, 64, 175, 0.8)), url('https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: var(--white);
-            margin-top: 70px;
-            padding: 0 20px;
-        }
-
-        .page-banner h1 {
-            font-size: 40px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .page-banner p {
-            font-size: 16px;
-            color: #e5e7eb;
-        }
-
-        /* Courses Section */
-        section {
-            padding: 70px 8%;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-title h2 {
-            font-size: 32px;
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-
-        .section-title p {
-            color: #6b7280;
-            font-size: 15px;
-        }
-
-        .courses-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .course-card {
-            background: var(--white);
-            border: 1px solid #e5e7eb;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            transition: 0.3s;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .course-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--primary);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-        }
-
-        .course-header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--white);
-            padding: 30px 20px;
-            text-align: center;
-        }
-
-        .course-header i {
-            font-size: 40px;
-            color: var(--accent);
-            margin-bottom: 15px;
-        }
-
-        .course-header h3 {
-            font-size: 20px;
-            font-weight: 600;
-        }
-
-        .course-body {
-            padding: 30px 25px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .course-body p {
-            color: #4b5563;
-            font-size: 14px;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-
-        .course-features {
-            list-style: none;
-            margin-bottom: 25px;
-        }
-
-        .course-features li {
-            font-size: 13px;
-            color: #374151;
-            margin-bottom: 8px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .course-features li i {
-            color: var(--primary);
-        }
-
-        .contact-box-banner {
-            background-color: var(--light);
-            padding: 50px 8%;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        .contact-box-banner h3 {
-            font-size: 24px;
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-
-        .contact-box-banner p {
-            color: #6b7280;
-            font-size: 15px;
-            margin-bottom: 15px;
-        }
-
-        .phone-highlight {
-            font-size: 18px;
-            font-weight: 600;
-            color: var(--dark);
-        }
-
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: var(--white);
-            text-align: center;
-            padding: 25px;
-            font-size: 14px;
-            color: #9ca3af;
-        }
-
-        @media(max-width: 768px) {
-            .page-banner h1 { font-size: 30px; }
-            nav ul { display: none; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - Surve Coaching Classes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <header>
-        <a href="index.html" class="logo">Surve <span>Coaching</span></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html" class="active">Courses</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="logo">Surve Coaching Classes</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="courses.html" class="active">Courses</a></li>
+        <li><a href="classes.html">Schedules</a></li>
+        <li><a href="exams.html">Exams</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Page Banner -->
-    <section class="page-banner">
-        <div>
-            <h1>Our Courses & Programs</h1>
-            <p>Structured curriculum designed for comprehensive academic success</p>
-        </div>
-    </section>
+  <main class="container fade-in">
+    <h1 style="color: var(--primary-blue);" class="slide-up">Our Offered Courses</h1>
+    <p class="slide-up">Explore our comprehensive coaching programs designed for school and board success.</p>
 
-    <!-- Courses Grid -->
-    <section>
-        <div class="section-title">
-            <h2>Programs Offered</h2>
-            <p>Choose the right batch tailored to your educational level</p>
-        </div>
+    <div class="grid-3 slide-up" style="margin-top: 30px;">
+      <div class="card">
+        <h3 style="color: var(--secondary-blue);">8th & 9th Foundation</h3>
+        <p>Builds a strong conceptual base in Science, Maths, and English for secondary school excellence.</p>
+        <br>
+        <a href="contact.html" class="btn-yellow">Inquire Now</a>
+      </div>
 
-        <div class="courses-grid">
-            <!-- Course 1 -->
-            <div class="course-card">
-                <div class="course-header">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h3>Class 8th to 10th Foundation</h3>
-                </div>
-                <div class="course-body">
-                    <div>
-                        <p>Focuses on building strong fundamental concepts in Mathematics and Science to ensure exceptional results in board examinations.</p>
-                        <ul class="course-features">
-                            <li><i class="fas fa-check-circle"></i> Complete Board Syllabus Coverage</li>
-                            <li><i class="fas fa-check-circle"></i> Weekly Practice Tests & Assignments</li>
-                            <li><i class="fas fa-check-circle"></i> Special Focus on Numerical & Logic Building</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+      <div class="card">
+        <h3 style="color: var(--secondary-blue);">10th SSC / CBSE Board</h3>
+        <p>Intensive batch covering syllabus, revision, regular practice tests, and board paper solving.</p>
+        <br>
+        <a href="contact.html" class="btn-yellow">Inquire Now</a>
+      </div>
 
-            <!-- Course 2 -->
-            <div class="course-card">
-                <div class="course-header">
-                    <i class="fas fa-book-open"></i>
-                    <h3>Class 11th & 12th Science</h3>
-                </div>
-                <div class="course-body">
-                    <div>
-                        <p>Advanced conceptual training for higher secondary science stream students, preparing them thoroughly for board exams and fundamentals.</p>
-                        <ul class="course-features">
-                            <li><i class="fas fa-check-circle"></i> In-depth Physics, Chemistry & Math/Biology</li>
-                            <li><i class="fas fa-check-circle"></i> Chapter-wise Detailed Notes & Guidance</li>
-                            <li><i class="fas fa-check-circle"></i> Regular Performance Assessments</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Course 3 -->
-            <div class="course-card">
-                <div class="course-header">
-                    <i class="fas fa-award"></i>
-                    <h3>Competitive Exams Preparation</h3>
-                </div>
-                <div class="course-body">
-                    <div>
-                        <p>Specialized preparation modules and strategic coaching designed for ambitious students targeting entrance exams.</p>
-                        <ul class="course-features">
-                            <li><i class="fas fa-check-circle"></i> Foundation Batches for Entrance Tests</li>
-                            <li><i class="fas fa-check-circle"></i> Shortcut Techniques & Time Management</li>
-                            <li><i class="fas fa-check-circle"></i> Regular Mock Test Series</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Banner -->
-    <div class="contact-box-banner">
-        <h3>Want to Enroll or Know More?</h3>
-        <p>Get in touch with us directly for batch timings and fee structures.</p>
-        <div class="phone-highlight">
-            <i class="fas fa-phone-alt" style="color: var(--primary); margin-right: 8px;"></i> 
-            +91 92845 52517 / +91 93592 37105
-        </div>
+      <div class="card">
+        <h3 style="color: var(--secondary-blue);">11th & 12th Science</h3>
+        <p>Complete coaching for Physics, Chemistry, Biology, and Mathematics with dedicated faculties.</p>
+        <br>
+        <a href="contact.html" class="btn-yellow">Inquire Now</a>
+      </div>
     </div>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Surve Coaching Class. All Rights Reserved.</p>
-    </footer>
+  <footer>
+    <p>&copy; 2026 Surve Coaching Classes. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
